@@ -118,6 +118,14 @@ Since scanning a live network with a real attacker isn't reproducible or safe to
 - A custom `ServerSocket`-based test server sending a known banner on an arbitrary port, confirming banner grabbing works regardless of port number
 - Comparing scanner output directly against sniffer-captured packets for the same scan, confirming the same events (open port, closed port, HTTP response) are visible and consistent at both the socket-API level and the raw packet level
 
+
+---
+Legal use
+
+Port scanning and packet capture — even on your own network — should only be run against systems you own or have explicit permission to test. Scanning or capturing traffic on a network you don't control or lack authorization for is illegal in most jurisdictions, including South Africa under the Cybercrimes Act (2020). This tool was built and tested exclusively against the author's own home network and devices.
+
+Promiscuous-mode capture in particular can see traffic belonging to other devices on the same network segment, not just your own — this is exactly why authorization matters, not just for the target being scanned but for the network itself.
+
 ---
 
 ## Stack
