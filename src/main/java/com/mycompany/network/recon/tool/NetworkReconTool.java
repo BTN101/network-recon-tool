@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 public class NetworkReconTool {
     public static void main(String[] args) throws Exception
     {   
-     String targetIp = "192.168.3.1";
+     String targetIp = "localhost";
      
      List<PcapNetworkInterface> interfaces = Pcaps.findAllDevs();
     PcapNetworkInterface selectedInterface = null;
